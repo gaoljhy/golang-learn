@@ -22,6 +22,8 @@ test: main gotest
 
 gotest:
 	./bin/main
+	./bin/main --input="param"
+	./bin/main --input
 
 ci:
 	go test -count=1 -p=1 -v ./tests/...
