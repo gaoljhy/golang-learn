@@ -1,16 +1,24 @@
 package main
 
 import (
-	"flag"
 	"fmt"
 )
 
+//  重新定义一个 type
+type num int
+
+const (
+	one num = iota
+	two
+	three
+	four
+	five
+)
+const ten int32 = 10
+
 func main() {
-	fmt.Println("hello world")
-	//  input flag class
-	input := flag.String("input", "default", "input some string in this param")
-	flag.Parse()
-	// print
-	fmt.Println("input content:", *input)
+
+	fmt.Println(one)
+	fmt.Println(ten)
 
 }
